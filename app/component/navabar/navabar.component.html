@@ -1,0 +1,16 @@
+
+<div class="d-flex w-100">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark p-3 vh-100 sticky-top" style="width: 300px;">
+    <ul class="navbar-nav flex-column w-100">
+        <li class="nav-item"><a routerLink="/navabar/viewProduct" class="nav-link">View_products</a></li>
+        <li class="nav-item"><a routerLink="/navabar/addProduct" class="nav-link">add_products</a></li>
+        <li class="nav-item me-5"><a routerLink="/navabar/deleteProduct" class="nav-link">delete_Products</a></li>
+        <li class="nav-item "><a class="nav-link" routerLink="/navabar/manageProduct">Manage_product</a></li>
+        <li class="nav-item"><button class="btn btn-lg border border-white nav-link" (click)="logout()"><i class="fa fa-user" aria-hidden="true"></i>
+{{username}}</button></li>
+    </ul>
+</nav>
+<div class="flex-grow-1 p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>

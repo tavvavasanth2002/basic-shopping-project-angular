@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center vh-100">
+        <div class="col-md-4 border border-dark ">
+            <h3 align="center" class="mb-5">Login</h3>
+            <form [formGroup]="loginForm" (ngSubmit)="check()">
+                <div class="form-group" >
+                    <label for="name" class="form-label">USERNAME:</label>
+                    <input type="text" name="uname" formControlName="username" class="form-control">
+                </div>
+                <div class="form-group mb-5">
+                    <label for="password" class="form-label">password:</label>
+                    <input type="password" name="pwd" formControlName="password" class="form-control">
+                </div>
+                <div class="form-group text-center mb-5">
+                    <button type="submit" name="sub" class="btn btn-lg bg-success text-white me-3">Login</button>
+                    <button type="reset" name="reset" class="btn btn-lg bg-danger text-white ms-3">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
