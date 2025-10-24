@@ -13,3 +13,17 @@
         </div>
     </div>
 </div>
+<h1>{{j.value}}</h1>
+<div class="row g-4">
+    <div class="col-md-4" *ngFor="let p of ja">
+        <div class="card border-0">
+            <div class="card-img-top">
+                <img [src]="p.image" alt="">
+            </div>
+            <div class="card-body">
+                {{p.price}}
+                {{p.title}}
+            </div>
+        </div>
+    </div>
+</div>
